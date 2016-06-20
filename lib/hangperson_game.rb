@@ -24,6 +24,7 @@ class HangpersonGame
   end
 
   def guess(letters)
+    false if letters.include?(/[A-Z]/)
     if !@guesses.include?(letters) && !@wrong_guesses.include?(letters)
       @guesses = letters if @word.include?(letters)
       @wrong_guesses = letters if !@word.include?(letters)
