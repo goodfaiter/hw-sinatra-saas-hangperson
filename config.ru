@@ -1,4 +1,4 @@
 require './app'
-run MyApp
-#run HangpersonApp
+#run MyApp
+run HangpersonApp
 
